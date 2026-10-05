@@ -18,6 +18,10 @@ public class Practice {
      */
     public static void printItems(String[] items) {
         // TODO: Implement this method here!
+        for (String itemString : items) {
+            System.out.println(itemString);
+        }
+        
     }
 
     /**
@@ -45,9 +49,13 @@ public class Practice {
      */
     public static boolean moreThanDouble(int a, int b) {
         // TODO: Delete the dummy return statement and implement this method here!
-        return false;
+       
+        if (a > 2 * b) {
+            return true;
+        } else {
+            return false;
+        }
     }
-
 
     /**
      * Returns whether every word in the array starts with the letter A (either
@@ -71,7 +79,11 @@ public class Practice {
      */
     public static boolean allStartWithA(String[] words) {
         // TODO: Delete the dummy return statement and implement this method here!
-        return false;
+        for (String word : words) {
+            if (word.toUpperCase().charAt(0) != 'A') {
+                return false;
+            }
+        } return true;
     }
 
     public static void main(String[] args) {
